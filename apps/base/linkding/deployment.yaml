@@ -12,11 +12,22 @@ spec:
       labels:
         app: linkding
     spec:
+# info: Security Context
+      securityContext:
+        fsGroup: 33 # note: update volume permissions forwww-data group ID
+        runAsUser: 33 # note: www-data user ID
+        runAsGroup: 33 # note: www-data group ID
+# info: Containers
       containers:
         - name: linkding
           image: sissbruecker/linkding:1.31.0
           ports:
             - containerPort: 9090
+
+          securityContext:
+            allowPrivilegeEscalation: false # note: disable privilege escalation
+
+# info: Storage
           volumeMounts:
             - name: linkding-data
               mountPath: /etc/linkding/data
