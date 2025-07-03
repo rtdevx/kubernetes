@@ -3,5 +3,4 @@ kind: Kustomization
 namespace: linkding
 resources:
   - ../../base/linkding
-  # info: Not exposing Services in staging. Region for testing purposes only.
-  #- cloudflared.yaml
+  - cloudflared.yaml
