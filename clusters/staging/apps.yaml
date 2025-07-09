@@ -13,3 +13,8 @@ spec:
     namespace: flux-system
   path: "./apps/staging"
   prune: true
+# info: sops encryption configuration
+  decryption:
+      provider: sops
+      secretRef:
+        name: sops-age  
