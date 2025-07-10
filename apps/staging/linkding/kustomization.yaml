@@ -4,5 +4,5 @@ namespace: linkding
 resources:
   - ../../base/linkding
   #- cloudflared.yaml # note: Uncomment if you want to deploy cloudflared tunnel
-  #- test-secret.yaml
-  #- linkding-cloudflare-credentials.yaml
+  - test-secret.yaml
+  - linkding-cloudflare-credentials.yaml
