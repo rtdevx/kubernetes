@@ -1,4 +1,7 @@
 creation_rules:
-  - path_regex: \.yaml$ # note: Process all yaml files
-    encrypted_regex: ^(data|stringData)$ # note: Encrypted regex for data and stringData fields
-    age: age1nuryad77a7uf0u7cmeu4nlu68t5tax4wge3yfu56clg0h57msekqtcj6fv # note: Public key for encryption / decryption
+  # note: Process all yaml files
+  - path_regex: \.yaml$
+    # note: Encrypted regex for data and stringData fields
+    encrypted_regex: ^(data|stringData)$
+    # note: Public key for encryption / decryption
+    age: age1nuryad77a7uf0u7cmeu4nlu68t5tax4wge3yfu56clg0h57msekqtcj6fv 

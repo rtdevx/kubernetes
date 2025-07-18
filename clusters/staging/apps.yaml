@@ -12,7 +12,7 @@ spec:
     name: flux-system
     namespace: flux-system
   path: "./apps/staging"
-  prune: true
+  prune: true # note: This will delete resources that are no longer defined in the kustomization.
 # info: sops encryption configuration
   decryption:
       provider: sops
