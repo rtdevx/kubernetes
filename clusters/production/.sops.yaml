@@ -1,0 +1,7 @@
+creation_rules:
+  # note: Process all yaml files
+  - path_regex: \.yaml$
+    # note: Encrypted regex for data and stringData fields
+    encrypted_regex: ^(data|stringData)$
+    # note: Public key for encryption / decryption
+    age: age14ez9p79ayp4wew9hu5rgtmutywyglqle5yzh83f5gw8ph9y6dfyq60wd35
