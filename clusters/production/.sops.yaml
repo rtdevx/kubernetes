@@ -4,4 +4,4 @@ creation_rules:
     # note: Encrypted regex for data and stringData fields
     encrypted_regex: ^(data|stringData)$
     # note: Public key for encryption / decryption
-    age: age14ez9p79ayp4wew9hu5rgtmutywyglqle5yzh83f5gw8ph9y6dfyq60wd35
+    age: age1esz4lnzpldg2tq223afk8lhf73adwpjxl0th6egf0xgukunjmazq36remj
