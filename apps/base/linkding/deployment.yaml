@@ -21,8 +21,10 @@ spec:
       containers:
         - name: linkding
           image: sissbruecker/linkding:1.31.0
+
           ports:
             - containerPort: 9090
+
           securityContext:
             allowPrivilegeEscalation: false # note: disable privilege escalation
 
