@@ -29,8 +29,8 @@ spec:
       envFrom: # note: use envFrom to load environment variables - create user in this case
         #- configMapRef:
         #    name: linkding-configmap
-        - secretRef:
-            name: linkding-container-env # note: 
+        #- secretRef:
+        #    name: linkding-container-env # note: 
 
           volumeMounts: # note: mount the persistent volume
             - name: linkding-data
