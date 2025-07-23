@@ -25,10 +25,16 @@ spec:
             - containerPort: 9090
           securityContext:
             allowPrivilegeEscalation: false # note: disable privilege escalation
-# info: Storage
-          volumeMounts:
+
+      envFrom: # note: use envFrom to load environment variables - create user in this case
+        #- configMapRef:
+        #    name: linkding-configmap
+        - secretRef:
+            name: linkding-container-env # note: 
+
+          volumeMounts: # note: mount the persistent volume
             - name: linkding-data
-              mountPath: /etc/linkding/data # note: mount the persistent volume
+              mountPath: /etc/linkding/data
       volumes:
         - name: linkding-data
           persistentVolumeClaim:
