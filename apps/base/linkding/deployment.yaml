@@ -28,11 +28,11 @@ spec:
           securityContext:
             allowPrivilegeEscalation: false # note: disable privilege escalation
 
-      #envFrom: # note: use envFrom to load environment variables - create user in this case
-        #- configMapRef:
-        #    name: linkding-configmap
-        #- secretRef:
-        #    name: linkding-container-env # note: 
+          envFrom: # note: use envFrom to load environment variables - create user in this case
+            #- configMapRef:
+            #    name: linkding-configmap
+            - secretRef:
+                name: linkding-container-env # note: use the secret created in linkding-container-env-secret.yaml
 
           volumeMounts: # note: mount the persistent volume
             - name: linkding-data
