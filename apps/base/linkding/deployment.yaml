@@ -26,7 +26,7 @@ spec:
           securityContext:
             allowPrivilegeEscalation: false # note: disable privilege escalation
 
-      envFrom: # note: use envFrom to load environment variables - create user in this case
+      #envFrom: # note: use envFrom to load environment variables - create user in this case
         #- configMapRef:
         #    name: linkding-configmap
         #- secretRef:
