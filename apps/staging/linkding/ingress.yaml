@@ -5,7 +5,7 @@ metadata:
 spec:
   ingressClassName: traefik # note: check ingress classes available in the cluster: `kubectl get ingressclass`
   rules:
-    - host: ld-traefik-s.skynetx.uk
+    - host: ld-s.lan.skynetx.uk
       http:
         paths:
           - backend:
