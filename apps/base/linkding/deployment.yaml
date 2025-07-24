@@ -14,7 +14,7 @@ spec:
     spec:
 # info: Security Context
       securityContext:
-        fsGroup: 33 # note: update volume permissions forwww-data group ID
+        fsGroup: 33 # note: update volume permissions for www-data group ID
         runAsUser: 33 # note: runas www-data user ID
         runAsGroup: 33 # note: runas www-data group ID
 # info: Containers
