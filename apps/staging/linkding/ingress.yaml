@@ -15,3 +15,7 @@ spec:
                   number: 9090
             path: /
             pathType: Prefix
+  tls:
+    - hosts:
+        - ld-s.lan.skynetx.uk
+      secretName: ld-s-lan-skynetx-uk-tls
