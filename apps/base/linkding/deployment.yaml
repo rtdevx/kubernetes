@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: linkding
 spec:
-  replicas: 10
+  replicas: 1
   selector:
     matchLabels:
       app: linkding
@@ -20,7 +20,7 @@ spec:
 # info: Containers
       containers:
         - name: linkding
-          image: sissbruecker/linkding:1.42.0
+          image: sissbruecker/linkding:1.31.0
 
           ports:
             - containerPort: 9090
